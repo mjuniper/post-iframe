@@ -3,7 +3,7 @@
   <head></head>
   <body>
     <script type="text/javascript">
-      // NOTE: this is the only post-iframe.html that is used
+      // NOTE: THIS FILE IS THE ONLY POST-IFRAME.HTML THAT IS USED THROUGHOUT THE OPENDATA STACK
       if (window.opener && window.opener.parent && window.opener.parent.checkOAuthResponse){
         window.opener.parent.checkOAuthResponse(window.location.href);
       } else if (window.parent && window.parent.checkOAuthResponse) {
