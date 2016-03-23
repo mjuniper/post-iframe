@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <script type="text/javascript">
+      // NOTE: this is the only post-iframe.html that is used
+      if (window.opener && window.opener.parent && window.opener.parent.checkOAuthResponse){
+        window.opener.parent.checkOAuthResponse(window.location.href);
+        window.close();
+      } else if (window.parent && window.parent.checkOAuthResponse) {
+        window.parent.checkOAuthResponse(window.location.href);
+        window.close();
+      }
+    </script>
+  </body>
+</html>
